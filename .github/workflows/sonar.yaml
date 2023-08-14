@@ -1,11 +1,8 @@
 on:
   # Trigger analysis when pushing in main or pull requests, and when creating
   # a pull request. 
-  push:
-    branches:
-      # - main
   pull_request:
-    types: [opened, reopened]
+    types: [opened, synchronize, reopened]
   check_run:
     types: [rerequested, created]
 
