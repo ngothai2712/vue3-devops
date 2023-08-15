@@ -12,6 +12,15 @@
   </div>
 </template>
 
+<script lang="ts" setup>
+for (let i = 0; i < 10; i++) {
+  console.log(i)
+}
+for (let i = 0; i < 10; i++) {
+  console.log(i)
+}
+</script>
+
 <style scoped>
 .item {
   margin-top: 2rem;
