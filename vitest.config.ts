@@ -12,6 +12,13 @@ export default mergeConfig(
       root: fileURLToPath(new URL('./', import.meta.url)),
       transformMode: {
         web: [/\.[jt]sx$/]
+      },
+      coverage: {
+        reporter: [
+          ['lcov', { projectRoot: './src' }],
+          ['json', { file: 'coverage.json' }],
+          ['text']
+        ]
       }
     }
   })
